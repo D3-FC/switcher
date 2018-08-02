@@ -6,9 +6,9 @@ Useful for fast prototyping, when you need fast toggle classes on dom elements
 
 ## Demo
 
-##[Try it out ->](https://d3-fc.github.io/#/switcher)
+[Try it out ->](https://d3-fc.github.io/#/switcher)
 
-![demo](https://d3-fc.github.io/img/-08-03_00-45-57.bc7377d0.gif)
+![Interface](https://i.imgur.com/t77eVBX.gifv) 
 
 ## Install
 
