@@ -4,6 +4,10 @@ Lightweight implementation of html class switcher (toggling class)
 
 Useful for fast prototyping, when you need fast toggle classes on dom elements
 
+## Demo
+
+[Try it out ->](https://d3-fc.github.io/#/switcher)
+
 ## Install
 
 * **npm**: `npm install d3-fc-switcher` 
