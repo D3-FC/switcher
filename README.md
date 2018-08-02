@@ -19,7 +19,7 @@ Useful for fast prototyping, when you need fast toggle classes on dom elements
 
 In your main js file
 ```javascript
-import { Switcher } from 'd3-fc-switche'
+import { Switcher } from 'd3-fc-switcher'
 
 Switcher.makeDefault()
 ```
