@@ -28,6 +28,7 @@ export class Switcher {
   }
 
   private clickHandler = (e: MouseEvent) => {
+    console.log('click', 'click')
     this.handleSwitcherClick(e)
   }
 

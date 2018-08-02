@@ -15,24 +15,65 @@ function prepareDom(){
   document.body.appendChild(container)
 }
 
-describe('Switcher', () => {
-  it('init', done => {
+function clearDom(){
+  document.getElementById('div1').remove()
+}
 
-    const asyncExpression = async () => {
+
+
+describe('Switcher', () => {
+
+  it('destroy', async done => {
+
+      prepareDom()
+
+      const switcher = Switcher.makeDefault()
+      switcher.destroy()
+
+      const button = document.getElementById('switcher')
+      button.click()
+
+      const switchableElement = document.getElementById('switchable')
+      expect(switchableElement.classList.contains('switchable-class')).toBeFalsy()
+
+      clearDom()
+      done()
+  })
+
+  it('first click', async done => {
 
       prepareDom()
 
       const switcher = Switcher.makeDefault()
       const button = document.getElementById('switcher')
+      button.click()
+
+      const switchableElement = document.getElementById('switchable')
+      expect(switchableElement.classList.contains('switchable-class')).toBeTruthy()
+
+      switcher.destroy()
+      clearDom()
+
+      done()
+  })
+
+  it('second click', async done => {
+
+      prepareDom()
+      const switcher = Switcher.makeDefault()
+      const button = document.getElementById('switcher')
 
       button.click()
-      
-      const switchableElement = document.getElementById('switchable')
-      expect(switchableElement.classList.contains('switchable-class')).toBe(true)
-      done()
-    }
 
-    asyncExpression()
+      button.click()
+
+      const switchableElement = document.getElementById('switchable')
+      expect(switchableElement.classList.contains('switchable-class')).toBeFalsy()
+
+      switcher.destroy()
+      clearDom()
+      done()
   })
+
 
 })
