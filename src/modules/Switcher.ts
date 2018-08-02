@@ -17,7 +17,7 @@ export class Switcher {
 
   }
 
-  handleSwitchableClass (switchable: HTMLElement) {
+  private handleSwitchableClass (switchable: HTMLElement) {
     const switchableClass: string | undefined = switchable.dataset[this.camelize(this.switchableClassDataAttr)]
     if (switchableClass && switchable.classList.contains(switchableClass)) {
       switchable.classList.remove(switchableClass)
@@ -27,7 +27,7 @@ export class Switcher {
     }
   }
 
-  clickHandler = (e: MouseEvent) => {
+  private clickHandler = (e: MouseEvent) => {
     this.handleSwitcherClick(e)
   }
 
@@ -40,20 +40,20 @@ export class Switcher {
    *  switcher.destroy()
    * }, 0)
    */
-  destroy () {
+  public destroy () {
     this.switchers.forEach(switcher => {
       switcher.removeEventListener('click', this.clickHandler)
     })
   }
 
-  handleSwitcherClick (e: MouseEvent) {
+  private handleSwitcherClick (e: MouseEvent) {
     const target = <HTMLElement> e.target
     const switchableKey = target.dataset[this.switcherDataAttr]
     const switchable = <HTMLElement> document.querySelector(`[data-${this.switchableDataAttr}="${switchableKey}"]`)
     this.handleSwitchableClass(switchable)
   }
 
-  addClickListeners (switcher: HTMLElement) {
+  private addClickListeners (switcher: HTMLElement) {
     switcher.addEventListener('click', this.clickHandler)
   }
 
@@ -63,7 +63,7 @@ export class Switcher {
     }).replace(/(\s|-)+/g, '')
   }
 
-  static makeDefault () {
+  public static makeDefault () {
     return new Switcher('switcher', 'switchable', 'switchable-class')
   }
 }
