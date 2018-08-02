@@ -1,12 +1,12 @@
 {
-    "name": "asva-executors",
-    "version": "0.1.9",
-    "description": "Helper classes for your async flow control",
+    "name": "d3-fc-switcher",
+    "version": "0.1.0",
+    "description": "html class switcher (toggling class)",
     "main": "dist/src/index.js",
     "types": "dist/src/index.d.ts",
     "private": false,
     "license": "MIT",
-    "author": "Yauheni Prakopchyk",
+    "author": "Dimitri Davidovi",
     "scripts": {
         "build": "webpack --progress --hide-modules --config src/build/webpack-config-build.js",
         "dev": "webpack-dev-server --inline --hot --config src/build/webpack-config-dev.js",
@@ -20,12 +20,12 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/asvae/executors.git"
+        "url": "git+https://github.com/D3-FC/switcher.git"
     },
     "bugs": {
-        "url": "https://github.com/asvae/executors/issues"
+        "url": "https://github.com/D3-FC/switcher/issues"
     },
-    "homepage": "https://github.com/asvae/executors#readme",
+    "homepage": "https://github.com/D3-FC/switcher#readme",
     "devDependencies": {
         "@types/jasmine": "^2.8.6",
         "@types/node": "^9.6.2",

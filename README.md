@@ -1,6 +1,6 @@
 # D3-FC switcher
 
-Lightweight implementation of html class switcher
+Lightweight implementation of html class switcher (toggling class)
 
 Useful for fast prototyping, when you need fast toggle classes on dom elements
 
@@ -13,7 +13,7 @@ Useful for fast prototyping, when you need fast toggle classes on dom elements
 
 In your main js file
 ```javascript
-import { Switcher } from 'switcher'
+import { Switcher } from 'd3-fc-switche'
 
 Switcher.makeDefault()
 ```
