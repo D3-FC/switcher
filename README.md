@@ -8,7 +8,7 @@ Useful for fast prototyping, when you need fast toggle classes on dom elements
 
 [Try it out ->](https://d3-fc.github.io/#/switcher)
 
-![Interface](https://i.imgur.com/t77eVBX.gifv) 
+![Interface](docs/main.gif)
 
 ## Install
 
