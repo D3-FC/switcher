@@ -1,0 +1,59 @@
+{
+    "name": "asva-executors",
+    "version": "0.1.9",
+    "description": "Helper classes for your async flow control",
+    "main": "dist/src/index.js",
+    "types": "dist/src/index.d.ts",
+    "private": false,
+    "license": "MIT",
+    "author": "Yauheni Prakopchyk",
+    "scripts": {
+        "build": "webpack --progress --hide-modules --config src/build/webpack-config-build.js",
+        "dev": "webpack-dev-server --inline --hot --config src/build/webpack-config-dev.js",
+        "test": "karma start --single-run",
+        "test-dev": "karma start"
+    },
+    "keywords": [
+        "executors",
+        "async",
+        "promise"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/asvae/executors.git"
+    },
+    "bugs": {
+        "url": "https://github.com/asvae/executors/issues"
+    },
+    "homepage": "https://github.com/asvae/executors#readme",
+    "devDependencies": {
+        "@types/jasmine": "^2.8.6",
+        "@types/node": "^9.6.2",
+        "babel-core": "^6.24.1",
+        "babel-loader": "^7.0.0",
+        "babel-plugin-transform-async-to-generator": "^6.24.1",
+        "babel-preset-env": "^1.6.1",
+        "clean-webpack-plugin": "^0.1.16",
+        "html-webpack-plugin": "^3.2.0",
+        "jasmine-core": "^3.1.0",
+        "karma": "^2.0.0",
+        "karma-chrome-launcher": "^2.1.0",
+        "karma-coverage": "^1.1.1",
+        "karma-jasmine": "^1.1.0",
+        "karma-requirejs": "^1.1.0",
+        "karma-typescript": "^3.0.12",
+        "karma-webpack": "^3.0.0",
+        "requirejs": "^2.3.5",
+        "ts-loader": "^4.2.0",
+        "typedoc": "^0.11.1",
+        "typedoc-webpack-plugin": "^1.1.4",
+        "typescript": "^2.8.1",
+        "webpack": "~4.5.0",
+        "webpack-cli": "^2.0.14",
+        "webpack-merge": "^4.1.0"
+    },
+    "engines": {
+        "node": ">= 5.0.0",
+        "npm": ">= 3.0.0"
+    }
+}
