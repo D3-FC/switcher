@@ -14,9 +14,10 @@
         "test-dev": "karma start"
     },
     "keywords": [
-        "executors",
-        "async",
-        "promise"
+        "javascript",
+        "html",
+        "css",
+        "toggle class"
     ],
     "repository": {
         "type": "git",
